@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Righteous&family=Sarala&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #ffcb65;
+  color: #2f2325;
+}
+
+header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background:#f9f7dc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.header-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #2f2325;
+  font-size: 25px;
+}
+
+#header-menu {
+	color: #2f2325;
+}
+
+nav {
+  position:absolute;
+  top: 50px;
+  background: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  
+}
