@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Sarala',sans-serif;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 header {
   position: fixed;
-  height: 50px;
+  height: 7vh;
   width: 100%;
   background:#f9f7dc;
   display: flex;
@@ -36,14 +37,35 @@ header {
 	color: #2f2325;
 }
 
+@keyframes menu {
+  from {
+    width: 0vw;
+    height: 0vh;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 nav {
-  position:absolute;
-  top: 50px;
-  background: black;
+  position:fixed;
+  top: 7vh;
+  background: rgba(0, 0, 0, 0.973);
   color: white;
+  height: 100vh;
+  width: 100vw;
+  padding: 3vh;
+  animation-name: menu;
+  animation-duration: 0.8s;
 }
 
 ul {
+  display: flex;
+  width: 100%;
   list-style: none;
-  
+  font-size: 1.5rem;
+  text-align: left;
+  flex-direction: column;
+  gap: 5px;
 }
