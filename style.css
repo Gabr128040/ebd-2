@@ -22,7 +22,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
 }
 
@@ -33,39 +33,176 @@ header {
   font-size: 25px;
 }
 
-#header-menu {
-	color: #2f2325;
-}
-
-@keyframes menu {
-  from {
-    width: 0vw;
-    height: 0vh;
-  }
-  to {
-    width: 100vw;
-    height: 100vh;
-  }
-}
-
-nav {
-  position:fixed;
-  top: 7vh;
-  background: rgba(0, 0, 0, 0.973);
-  color: white;
-  height: 100vh;
-  width: 100vw;
-  padding: 3vh;
-  animation-name: menu;
-  animation-duration: 0.8s;
-}
-
-ul {
+main {
+  margin: auto;
+  padding-top: 7vh;
   display: flex;
-  width: 100%;
-  list-style: none;
-  font-size: 1.5rem;
-  text-align: left;
   flex-direction: column;
-  gap: 5px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.cnt-bemVindo {
+  padding: 3.2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.ttl-bemVindo {
+  text-align: left;
+  color: #2f2325;
+  font-size: 55px;
+  font-family: 'Righteous', cursive;
+  line-height: 60px;
+}
+
+.p-bemVindo {
+  font-size: 25px ;
+  font-weight: 300;
+}
+
+.btn-bemVindo {
+  background-color: bisque;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  height: 50px;
+  font-family:'Sarala',sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.25);
+  color: #2f2325;
+}
+
+.btn-bemVindo-ancora {
+    text-decoration: none;
+    color:#2f2325 ;
+}
+
+.cnt-comoFunciona{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.2vh;
+}
+
+.comoFunciona-ttl {
+  font-size: 28px;
+  border-top: 2px solid black;
+  margin-top: 10px;
+  padding-top: 6px;
+}
+
+.comoFunciona-p {
+  text-align: center;
+}
+
+@keyframes icon {
+  0% {
+    transform: translateY(px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  
+}
+
+#comoFunciona-icon {
+  font-size: 60px;
+  animation: con 0.8s infinite ;
+}
+
+.cnt-sobre {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.2vh;
+}
+
+.sobre-ttl {
+  font-size: 28px;
+  border-top: 2px solid black;
+  margin-top: 10px;
+  padding-top: 6px;
+}
+
+.sobre-p {
+  text-align: center;
+}
+
+#sobre-icon {
+  font-size: 60px;
+}
+
+.cnt-revistas {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.2vh;
+}
+
+.revistas-ttl {
+  font-size: 28px;
+  border-top: 2px solid black;
+  margin-top: 10px;
+  padding-top: 6px;
+}
+
+revistas-p {
+  text-align: center;
+}
+
+#revistas-icon {
+  font-size: 60px;
+}
+
+.revistas-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:25px ;
+  margin: 20px;
+  background: #2f2325;
+  border-radius: 5px;
+  width: 60vw;
+  height: 20vh;
+  color: white;
+  padding: 10px;
+  box-shadow: 5px 5px 0px rgb(81,54,46);
+}
+
+.item-btn {
+  width: 55%;
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+  background: bisque;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.item-revista-anco {
+  color: #2f2325;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  height: 5.5vh;
+  background:#2f2325 ;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-logoEBD {
+  color: #f9f7dc;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.footer-logoidm {
+  width: 8%;
 }
